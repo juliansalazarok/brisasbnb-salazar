@@ -1,0 +1,622 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/*Paleta
+Rojo #FE6D73 Blanco #F1FAEE Celeste #A8DADC Azul #457B9D Azul oscuro #1D3557
+*/
+
+/*Estilos generales*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 0, 0, 0.668);
+    background-color: #F1FAEE;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #F1FAEE;
+}
+
+.titulo-paginas{
+    margin-bottom:20px;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav{
+    padding: 10px;
+    margin: 0px 20px;
+    border-radius: 10px;   
+    background-color:#f1faee86;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Imágenes de deptos*/
+main section article img{
+    height: 326px;
+    width: 500px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius:5px;
+}
+
+/*Alineación lista desordenada Nav*/
+.ulnav{
+    text-transform:uppercase;
+    text-decoration: none;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
+/*Elementos lista Navegador*/
+.linav{
+    padding: 0em 4em;
+    font-size: 16px;
+    border-radius: 5px; 
+    list-style: none;
+}
+
+.linav-a{
+    color:#457B9D; 
+}
+
+
+/*Background del Nav y Header*/
+.navheaderback{
+    padding-top: 5px;
+    width: 100%;
+    height: 290px;
+    background-image: url("../assets/backgrounds/seyfettin-dincturk-3hnVKdWveT4-unsplash.jpg");
+    background-size:cover;
+    background-position: center -130px;
+}
+
+
+/*BEM Header*/
+.contenedorHeader{
+    margin-top: 20px;
+    background-color:rgba(0, 0, 0, 0.199);;
+    height:120px;
+    color:#F1FAEE;
+    text-shadow: 1px 1px black;
+
+}
+
+.contenedorHeader__titulo{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    
+}
+
+.contenedorHeader__subtitulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size:130%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/*Footer*/
+footer{
+    background-color: #1D3557;
+    height:8rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.footer-header{
+    font-size: 150%;
+    letter-spacing: 1px; 
+    color: #FE6D73;  
+    margin-top: 30px;
+    }
+
+.footer-iconos{
+    list-style: none;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+
+/*Estilos específicos*/
+
+/*Contenedor del Main en Index*/
+.container-mainIndex{
+    margin:20px;    
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;       
+}
+
+
+/*Buscador Reservas Index*/
+.cajabuscador{
+    margin-bottom:10px;
+    padding: 15px;
+    width: 75%;
+    border-radius: 10px;
+    font-size: 18px;
+    color:#F1FAEE ;
+    background-color: #FE6D73;
+}
+
+.flex-fieldset{
+    display:flex;
+    justify-content: space-around;
+}
+
+.cajabuscador__legend{
+    padding: 2px;
+    margin-top: -5px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 2px;
+}
+
+.flex-cajabuscador{
+    margin-bottom:10px;
+    display:flex;
+    align-items:center;
+}
+
+
+.cajabuscador__label{
+    padding-left: 10px;
+    padding-right: 2px;
+    letter-spacing: 1px;
+}
+
+
+.boton{
+    padding: 2px 8px 2px 8px;
+    font-size: 14px;
+    border: solid #6D6875;
+    border-radius: 10px;
+}
+
+.boton--nuevo{
+    margin-bottom:10px;
+    background-color: #F1FAEE;
+    color:grey;
+    font-weight:bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/*Grid*/
+.grid-deptosMadrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:repeat(3,1fr);
+    gap:50px;
+}
+
+.grid-deptosBaires{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap:50px;
+}
+
+.titulo-madrid{
+    margin-top:30px; 
+}
+
+.titulo-baires{
+    margin-top:10px;
+}
+
+/*Caja img de Index y Pisos*/
+.cajadeptos{
+    margin-bottom:30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+/*Botón de imágenes de Index y Pisos*/
+.boton-img{
+    height:2rem;
+    width: 500px;
+    font-size: 12px;
+    border:none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight:bold;
+    background-color: #1D3557;
+    text-decoration:none;
+}
+
+
+/*Textos de img en Main Index y Pisos*/
+.font-destacados{
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+    margin: 10px 10px
+}
+
+.font-destacados__detalle{
+    font-size:18px;
+}
+
+.lista-detalle-deptos{
+    font-size:15px;
+    margin-bottom:10px; 
+    list-style-position: inside;
+    display:flex;
+}
+
+/*Contenedor Main Servicios*/
+.container-mainServicios{ 
+    margin-top:20px;
+    display:flex;
+    flex-direction: column;
+}
+
+
+/*BEM lista Servicios*/
+.contenedorlista1{
+    margin:30px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedorlista2{
+    margin:30px;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedorlista__img{
+    display: inline-block;
+    height: 266px;
+    width: 400px;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.contenedorlista__item{
+    font-size: 25px;
+    background-color: #F1FAEE;
+    margin:20px;
+}
+
+.contenedorlista__itemlista{
+    margin-top: 2px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.contenedorlista__itemsord{
+font-size: 20px;
+text-align: left;
+margin-top: 12px;
+background-color: #F1FAEE;  
+list-style-image: url("../assets/icons/Brisas_bullet.png");  
+}
+
+/*Botón Contacto Servicios*/
+.contactserv{
+    width:250px;
+    margin: 40px;
+    padding: 10px;
+    align-self:center;
+    border: solid thin 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #1D3557; 
+}
+
+
+/*Contenedor Main Servicios*/
+.container-mainPisos{ 
+    margin-top:20px;
+    display:flex;
+    flex-direction: column;
+}
+
+/*Flexbox Pisos en Venta*/
+.flex-pisosventa{
+    margin:40px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.container-mainLive{ 
+    margin:20px;
+    display:flex;
+    flex-direction: column;
+}
+
+/*Subtítulo Livecams*/
+#bajadaLive{
+    margin: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.grid-contenedoresLive{
+    margin:50px;
+    display:grid;
+    grid-template-areas: 
+    "madrid baires"
+    "bannerhoriz bannerhoriz"
+    ;
+    row-gap: 100px;
+}
+
+.grid-madrid{
+    grid-area:madrid;
+}
+
+.grid-baires{
+grid-area: baires;
+}
+
+.grid-bannerHoriz{
+    grid-area:bannerhoriz;
+    justify-self:center;
+}
+
+.grid-bannerVertical{
+    display:none;
+}
+
+/*Caja Livecam*/
+.contenedorLive{
+    /*
+    margin-left: 50px;
+    margin-bottom: 50px;
+    padding: 1em;
+    display: inline-block;
+    text-align: center;*/
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorLive__titulo{
+    margin-bottom:20px;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+
+.contenedorLive__iframe{
+    width:560px; 
+    height:315px;
+    border-radius: 20px;
+}
+
+/*Contacto*/
+.container-mainContacto{ 
+    margin:50px;
+    display:flex;
+    flex-direction: column;
+}
+
+.box-contacto{
+    padding: 20px;
+    background-image: url("../assets/backgrounds/buenos\ aires\ pm.jpg");
+    background-size: cover;
+    background-position: center;
+    color:#F1FAEE;
+    text-shadow: 1px 1.5px black;
+    border-radius:10px;
+}
+
+
+.contenedor-fieldsetContacto{
+    padding:30px;
+}
+.nombreApellido{
+    display:flex;
+}
+
+.movilEmail{
+    display:flex;
+    margin-top:25px;    
+}
+
+.sexo{
+    display:flex;
+    flex-direction:column;
+    margin-top:25px;
+}
+
+.opcionSexo{
+    margin-top:10px;
+    width:300px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.motivo{
+    margin-top: 25px;
+}
+
+.comentarios{
+    margin-top:25px;
+}
+
+.textareaComentario{
+    width:60%;
+    height:200px;
+
+}
+
+.contenedorCheckbox{
+    margin:25px;
+
+}
+
+.checkbox{
+    font-size: 80%;
+}
+
+.botonesContacto{
+    display:flex;
+    justify-content: space-around;
+}
+
+.botoncontacto{
+    /*margin:1rem 0rem 1rem 10rem;*/
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color:#F1FAEE;
+    background-color: rgba(0, 0, 0, 0.49);
+    letter-spacing: 2px;
+    border: solid thin #F1FAEE;
+    border-radius: 10px;
+}
+
+/*Media queries*/
+
+@media only screen and (max-width:576px){
+
+    /*Estilos generales*/
+
+    nav{
+        flex-direction: column;
+    }
+
+
+    .navheaderback{
+        height: 250px;
+        background-position:top;
+    }
+    
+    .ulnav{
+        justify-content: center;
+    }
+
+    .linav{
+        margin:10px;
+        padding:0px 0px;
+    }
+
+    .contenedorHeader{
+        height:85px;
+    }
+
+    .contenedorHeader__titulo{
+        font-size:40px;
+    }
+
+    /*Index*/
+
+    .flex-fieldset{
+        flex-direction:column;
+    }
+
+    .flex-cajabuscador{
+        justify-content: space-around;
+    }
+
+
+    .grid-deptosMadrid{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows:repeat(6,1fr);
+    }
+
+    .grid-deptosBaires{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+
+    /*Servicios*/
+
+    .contenedorlista__item{
+        text-align:center;
+    }
+
+    /*Livecam*/
+
+    .container-mainLive{
+        margin:0px;
+    }
+
+    .grid-contenedoresLive{
+        grid-template-areas: 
+        "madrid"
+        "baires"
+        "bannervertical"
+        ;
+        row-gap: 100px;
+    }
+
+    .grid-bannerVertical{
+        display:block;
+        grid-area:bannervertical;
+        justify-self:center;
+    }
+
+    .grid-bannerHoriz{
+        display:none;
+    }
+
+    .contenedorLive__iframe{
+        width:480px;
+    }
+
+    /*Contacto*/
+
+    .contenedor-fieldsetContacto{
+        align-items:center;
+    }
+
+    .nombreApellido{
+        flex-direction:column;
+    }
+
+    .movilEmail{
+        flex-direction:column;
+    }
+
+    .textareaComentario{
+        width:350px;
+        height:200px;
+    }
+
+    .contenedorCheckbox{
+        font-size:18px;
+        margin:18px;
+    }
+
+}

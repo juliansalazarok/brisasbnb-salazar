@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+<!--icono marca-->
+    <link rel="shortcut icon" href="../assets/icons/Brisas_Design.png" type="image/x-icon">
+    <title>Brisasbnb-contacto</title>
+</head>
+<body>
+    <div class="navheaderback">
+        <nav>
+            <a href="../index.html">
+            <img src="../assets/icons/Brisas_Design.png" alt="logo-brisasbnb" width="200">
+            </a>
+            <ul class="ulnav">
+            <!--Enlaces relativos-->
+            <li class="linav"> <a class="linav-a" href="../index.html">Inicio</a></li>
+            <li class="linav"> <a class="linav-a" href="servicios.html">Servicios</a></li>
+            <li class="linav"> <a class="linav-a" href="pisos.html">Pisos</a></li>
+            <li class="linav"> <a class="linav-a" href="livecams.html">Livecams</a></li>
+            <li class="linav"> <a class="linav-a" href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="contenedorHeader">
+        <h1 class="contenedorHeader__titulo">Madrid - Buenos Aires</h1>
+            <h2 class="contenedorHeader__subtitulo">Alojamientos turísticos</h2>
+    </header>
+    </div>
+    <main class="container-mainContacto">
+        <h2 class="titulo-paginas">Contacto</h2>
+        <form class="box-contacto" action="procesar.php" name="contacto" method="post">
+            <fieldset class="contenedor-fieldsetContacto">
+                <legend>Reservas - Consultas - Sugerencias</legend>
+                <p class="nombreApellido">
+                    <label>Nombre:
+                    <input type="text" name="nombre" placeholder="Julian" required>
+                    </label>
+                    <label>Apellido:
+                    <input type="text" name="apellido" placeholder="Salazar">
+                    </label>
+                </p>
+                <p class="movilEmail"">
+                    <label>Móvil
+                    <input type="text" name="number" placeholder="+3499456358">
+                    </label>
+                    </label>
+                    <label>Email
+                    <input type="email" name="email" placeholder="tuemail@gmail.com" required>
+                    </label>
+                </p>
+            
+                <div class="sexo"><h4>Sexo</h4>
+                    <div class="opcionSexo">
+                        <label for="sexo">Mujer</label>
+                        <input type="radio" name="sexo" value="mujer">
+                        <label for="sexo">Hombre</label>
+                        <input type="radio" name="sexo" value="hombre">
+                        <label for="sexo">Otro</label>
+                        <input type="radio" name="sexo" value="otro">
+                    </div>
+                </div>
+                
+                <div class="motivo">
+                    <h4>Motivo</h4>
+                    <select name="motivo">
+                        <option value="reserva">Reserva</option>
+                        <option value="servicios">Servicios a propietarios</option>
+                        <option value="pisos">Pisos en venta</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="comentarios">
+                    <h4>Comentarios</h4>
+                    <textarea class="textareaComentario" name="comentario" id=""></textarea>
+                </div>
+
+                <div class="contenedorCheckbox">
+                    <p class="checkbox">
+                        <input type="checkbox">
+                        <label for="avisolegal">He leído y acepto el Aviso Legal</label>
+                    </p>
+                    <p class="checkbox">
+                        <input type="checkbox">
+                        <label for="politica-privacidad">He leído y acepto la Política de Privacidad</label>
+                    </p>
+                </div>       
+                <p class="botonesContacto">
+                    <button class="botoncontacto" type="submit">Enviar</button> 
+                    <button class="botoncontacto" type="reset">Borrar</button>
+                </p>
+            </fieldset>
+        </form>
+    </main>
+
+
+    <footer>
+        <div class="footer-logo"><img src="../assets/icons/Brisas_Design.png" alt="logo-brisasbnb" width="200"></div>
+        <div class="footer-header"><h4>Síguenos</h4>
+        <ul class="footer-iconos">
+            <li><img src="../assets/icons/1217163_twitter_icon.png" alt="twitter" width="25px"></li>
+            <li><img src="../assets/icons/1217174_instagram_icon.png" alt="instagram" width="25px"></li>
+            <li><img src="../assets/icons/1217173_linkedin_icon.png" alt="linkedin" width="25px"></li>
+        </ul>
+        </div>
+    </footer> 
+
+    
+</body>
+</html>
