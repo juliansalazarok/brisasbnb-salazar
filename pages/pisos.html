@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
 <!--icono marca-->
     <link rel="shortcut icon" href="../assets/icons/Brisas_Design.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Brisasbnb-pisos</title>
 </head>
 
@@ -36,7 +37,7 @@
     <main> 
         <div class="container-mainPisos">  
             <h2 class="titulo-paginas">Pisos en venta</h2> 
-            <section class="flex-pisosventa">
+            <section class="flex-pisosventa" data-aos="fade-up" data-aos-duration="3000">
                 <article class="cajadeptos">
                     <img src="../assets/img/Venta1.jpg" alt="venta1" width="250">
                     <p class="font-destacados">Tres ambientes en Palermo</p>
@@ -71,6 +72,10 @@
         </div>
     </footer> 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     
 </body>
 </html>

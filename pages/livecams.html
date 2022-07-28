@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
 <!--icono marca-->
     <link rel="shortcut icon" href="../assets/icons/Brisas_Design.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Brisasbnb-livecams</title>
 </head>
 <body>
@@ -33,7 +34,7 @@
 
     <main class="container-mainLive">
         <h2 class="titulo-paginas">Live cams</h2>
-        <h3 id="bajadaLive">Comienza a conocer la ciudad antes de tu llegada!</h3>
+        <h3 id="bajadaLive" data-aos="fade-up">Comienza a conocer la ciudad antes de tu llegada!</h3>
         <div class="grid-contenedoresLive">
             <section class="contenedorLive grid-madrid">
                 <h4 class="contenedorLive__titulo">Madrid</h4>
@@ -68,7 +69,10 @@
         </div>
     </footer> 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     
 </body>
 </html>

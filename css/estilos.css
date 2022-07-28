@@ -195,8 +195,9 @@ footer{
 
 .boton--nuevo{
     margin-bottom:10px;
-    background-color: #F1FAEE;
+    /*background-color: #F1FAEE;*/
     color:grey;
+    background-image: linear-gradient(to left,#F1FAEE,#A8DADC);
     font-weight:bold;
     text-transform: uppercase;
     letter-spacing: 2px;

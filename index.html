@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/estilos.css">
 <!--icono marca-->
     <link rel="shortcut icon" href="assets/icons/Brisas_Design.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Brisasbnb-Home</title>
 </head>
 
@@ -29,8 +30,8 @@
 
         <header>
             <div class="contenedorHeader">
-                <h1 class="contenedorHeader__titulo">Madrid - Buenos Aires</h1>
-                <h2 class="contenedorHeader__subtitulo">Alojamientos turísticos</h2>
+                <h1 class="contenedorHeader__titulo" data-aos="fade-down">Madrid - Buenos Aires</h1>
+                <h2 class="contenedorHeader__subtitulo" data-aos="fade-up">Alojamientos turísticos</h2>
             </div>
         </header>
     </div>
@@ -216,6 +217,11 @@
         </ul>
         </div>
     </footer> 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
