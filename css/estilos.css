@@ -245,7 +245,7 @@ footer{
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight:bold;
-    background-color: #1D3557;
+    background-image: linear-gradient(to left,#457B9D ,#1D3557,#457B9D);
     text-decoration:none;
 }
 
@@ -336,7 +336,7 @@ list-style-image: url("../assets/icons/Brisas_bullet.png");
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: bold;
-    background-color: #1D3557; 
+    background-image: linear-gradient(to left,#457B9D ,#1D3557,#457B9D); 
 }
 
 
