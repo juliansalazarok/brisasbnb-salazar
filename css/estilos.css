@@ -1,7 +1,3 @@
-
-/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap'); */
-
 /*Paleta
 Rojo #FE6D73 Blanco #F1FAEE Celeste #A8DADC Azul #457B9D Azul oscuro #1D3557
 */
@@ -21,12 +17,6 @@ body{
     background-color: #F1FAEE;
 } 
 
-/*html{
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    color: rgba(0, 0, 0, 0.668);
-    background-color: #F1FAEE;
-}*/
 
 a{
     text-decoration: none;
@@ -51,7 +41,6 @@ ol, ul{
 }
 
 nav{
-    height:90px;
     padding: 10px;
     background-color:#f1faeed1;
 }
@@ -66,25 +55,7 @@ main section article img{
     border-radius:5px;
 }
 
-/*Alineación lista desordenada Nav*/
-.ulnav{
-    text-transform:uppercase;
-    text-decoration: none;
-}
-
-
-/*Elementos lista Navegador*/
-/* .linav{
-    padding: 0em 4em;
-    font-size: 16px;
-    border-radius: 5px; 
-    list-style: none;
-} */
-
-/* .linav-a{
-    color:#457B9D; 
-} */
-
+/*Estilos Nav Bootstrap*/
 .navbar-nav{
     width:90%;
     justify-content:space-evenly;
@@ -140,7 +111,7 @@ main section article img{
     letter-spacing: 2px;
 }
 
-/*Footer*/
+/*Footer + íconos bootrstrap*/
 footer{
     background-color: #1D3557;
     height:12rem;
@@ -176,6 +147,7 @@ footer{
     align-items: center;       
 }
 
+/*Formulario Bootstrap*/
 .form-select{
     color:#FE6D73;
 }
@@ -197,68 +169,8 @@ footer{
     --bs-btn-hover-border-color: #FE6D73;
 }
 
-.col-2{
-    text-align:center;
-}
 
-/*Buscador Reservas Index*/
-/* .cajabuscador{
-    margin-bottom:10px;
-    padding: 15px;
-    width: 75%;
-    border-radius: 10px;
-    font-size: 18px;
-    color:#F1FAEE ;
-    background-color: #FE6D73;
-}
-
-
-.flex-fieldset{
-    display:flex;
-    justify-content: space-around;
-}
-
-.cajabuscador__legend{
-    padding: 2px;
-    margin-top: -5px;
-    margin-left: auto;
-    margin-right: auto;
-    letter-spacing: 2px;
-}
-
-.flex-cajabuscador{
-    margin-bottom:10px;
-    display:flex;
-    align-items:center;
-}
-
-
-.cajabuscador__label{
-    padding-left: 10px;
-    padding-right: 2px;
-    letter-spacing: 1px;
-}
-
-
-.boton{
-    padding: 2px 8px 2px 8px;
-    font-size: 14px;
-    border: solid #6D6875;
-    border-radius: 10px;
-}
-
-.boton--nuevo{
-    margin-bottom:10px;
-    /*background-color: #F1FAEE;*/
-    /* color:grey;
-    background-image: linear-gradient(to left,#F1FAEE,#A8DADC);
-    font-weight:bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-} */ 
-
-
-/*Grid*/
+/*Grid Deptos*/
 .grid-deptosMadrid{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -274,7 +186,7 @@ footer{
 }
 
 .titulo-madrid{
-    margin-top:30px; 
+    margin-top:20px; 
 }
 
 .titulo-baires{
@@ -454,12 +366,6 @@ grid-area: baires;
 
 /*Caja Livecam*/
 .contenedorLive{
-    /*
-    margin-left: 50px;
-    margin-bottom: 50px;
-    padding: 1em;
-    display: inline-block;
-    text-align: center;*/
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -480,7 +386,7 @@ grid-area: baires;
 
 /*Contacto*/
 .contenedor-mainContacto{ 
-    margin:20px;
+    margin:50px;
     display:flex;
     flex-direction: column;
 }
@@ -495,10 +401,11 @@ grid-area: baires;
     border-radius:10px;
 }
 
+/*Correcciones fuente boostrap en Contacto*/
 button, input, optgroup, select, textarea{
     font-size:80%;
 }
-
+/*Corrección legend bootstrap en Contacto*/
 legend{
     float:none;
     width:auto;
@@ -576,24 +483,12 @@ legend{
 
     /*Estilos generales*/
 
-    nav{
-        flex-direction: column;
-    }
-
 
     .navheaderback{
         height: 250px;
         background-position:top;
     }
     
-    .ulnav{
-        justify-content: center;
-    }
-
-    .linav{
-        margin:10px;
-        padding:0px 0px;
-    }
 
     .contenedorHeader{
         height:85px;
@@ -631,11 +526,6 @@ legend{
     }
 
     /*Livecam*/
-
-    .contenedor-mainLive{
-        margin:0px;
-    }
-
     .grid-contenedoresLive{
         grid-template-areas: 
         "madrid"
@@ -660,7 +550,6 @@ legend{
     }
 
     /*Contacto*/
-
     .contenedor-fieldsetContacto{
         align-items:center;
     }
