@@ -127,15 +127,36 @@ footer{
     align-items: center;
 }
 
+//Maps
+$coloresfooter: (
+    gris: #676869,
+    rojo: #e95331,
+    rosa: #FE6D73,
+    blanco: #F1FAEE,
+);
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: map-get($map: $coloresfooter, $key: gris);
+    font-style: italic;
+    font-size: 16px;
+}
+
+.superhost{
+    color: map-get($map: $coloresfooter, $key: rojo);
+}
+
 .footer-header{
     font-size: 150%;
     letter-spacing: 1px; 
-    color: #FE6D73;  
+    color: map-get($map: $coloresfooter, $key: rosa);  
     margin-top: 30px;
     }
 
 .footer-iconos{
-    color:#656566;
+    color: map-get($map: $coloresfooter, $key: blanco);
     list-style: none;
     display:flex;
     justify-content: space-evenly;
@@ -156,6 +177,10 @@ footer{
 
 /*Formulario Bootstrap*/
 .form-select{
+    color:#FE6D73;
+}
+
+.form-control{
     color:#FE6D73;
 }
 
@@ -506,6 +531,7 @@ footer{
 }
 
 .box-contacto{
+    margin: 40px 50px 60px 50px;
     padding: 20px;
     background-image: url("../assets/backgrounds/buenos\ aires\ pm.jpg");
     background-size: cover;
@@ -513,6 +539,9 @@ footer{
     color:#F1FAEE;
     text-shadow: 1px 1.5px black;
     border-radius: 10px;
+}
+.labelname{
+    margin-right: 20px;
 }
 
 /*Correcciones fuente boostrap en Contacto*/
@@ -599,7 +628,228 @@ legend{
 
 
 /*Media queries*/
-@media only screen and (max-width:576px){
+@media only screen and (min-width:320px) and (max-width:576px){
+    /*Estilos generales*/
+    .navheaderback{
+        background-position: center;
+    }
+    
+    .contenedorHeader{
+        margin-top: 125px;
+        padding: 3%;
+    }
+
+    .contenedorHeader__titulo{
+        font-size: 2rem;
+    }
+
+    .contenedorHeader__subtitulo{
+        font-size: 100%;
+    }
+
+    .titulo-paginas{
+        font-size: 28px;
+    }
+
+    footer div img{
+        width: 150px;
+    }
+
+    .footer-logo{
+        font-size: 12px;
+    }
+
+
+    .footer-header{
+        font-size: 100%;
+    }
+
+    footer div h4{
+        font-size: 18px;
+    }
+
+    /*Index*/
+    .contenedor-mainIndex{
+        margin-bottom: 60px;
+    }
+
+    .flex-cajabuscador{
+        justify-content: space-around;
+    }
+
+    input, button, select, optgroup, textarea{
+        margin: 2px;
+    }
+
+    .grid-deptosMadrid{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows:repeat(6,1fr);
+    }
+
+    .grid-deptosBaires{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+
+    .titulo-madrid{
+        margin-top: 30px;
+    }
+
+    .cajadeptos{
+        margin-bottom: 0px;
+    }
+
+    main section article img{
+        width: 300px;
+        height: 200px;
+        margin-right: none;
+        margin-left: none;
+    }
+
+    .font-destacados{
+        font-size: 16px;
+        margin: none;
+    }
+
+    .font-destacados__detalle{
+        font-size: 11px;
+
+    }
+
+    .lista-detalle-deptos{
+        font-size: 13px;
+    }
+
+    .boton-img{
+        width: 300px;
+    }
+
+    /*Servicios*/
+    .contenedorlista1, .contenedorlista2{
+        margin: 20px;
+    }
+    .contenedorlista__img{
+        width: 300px;
+        height:200px;
+    }
+
+    .contenedorlista__item{
+        font-size: 20px;
+        text-align:center;
+    }
+
+    .contenedorlista__itemsord{
+        font-size: 14px;
+    }
+    .contactserv{
+        margin: 0px;
+    }
+
+    .contenedor-mainServicios{
+        margin-bottom: 60px;
+    }
+
+    /*Pisos*/
+
+    .flex-pisosventa{
+        margin: 0px;
+    }
+
+    .contenedor-hoverdeptos{
+        width: 300px;
+        height: 200px;
+        margin-top: 40px;
+    }
+
+    /*Livecam*/
+    #bajadaLive{
+        margin: 0px;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .grid-contenedoresLive{
+        margin: 0px;
+        grid-template-areas: 
+        "madrid"
+        "baires"
+        "bannervertical"
+        ;
+        row-gap: 50px;
+    }
+
+    .contenedorLive__iframe{
+        width: 300px;
+        height: 240px;
+    }
+
+    .grid-bannerVertical{
+        display:block;
+        grid-area:bannervertical;
+        justify-self:center;
+    }
+
+    .grid-bannerHoriz{
+        display:none;
+    }
+
+    /*Contacto*/
+    .box-contacto{
+        margin: 20px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contenedor-fieldsetContacto{
+        padding: 5px;
+    }
+
+    .nombreApellido{
+        flex-direction: column;
+    }
+
+    .movilEmail{
+        flex-direction: column;
+    }
+    
+    .sexo{
+        width: 220px;
+    }
+
+    .sexo h4{
+        font-size: 16px;
+    }
+    
+    .opcionSexo{
+        display:inline;
+    }
+
+    .motivo h4{
+        font-size: 16px;
+    }
+
+    .comentarios h4{
+        font-size: 16px;
+    }
+
+    .textareaComentario{
+        width: 100%;
+    }
+
+    .contenedorCheckbox{
+        font-size: 11px;
+        margin: 0px;
+    }
+
+    .botonesContacto{
+        flex-wrap: wrap;
+    }
+    
+
+}
+
+
+@media only screen and (min-width:576px) and (max-width:1200px){
 
     /*Estilos generales*/
     .navheaderback{
@@ -609,7 +859,7 @@ legend{
     
 
     .contenedorHeader{
-        height:85px;
+        height:100px;
     }
 
     .contenedorHeader__titulo{
@@ -625,6 +875,9 @@ legend{
         justify-content: space-around;
     }
 
+    input, button, select, optgroup, textarea{
+        margin: 2px;
+    }
 
     .grid-deptosMadrid{
         grid-template-columns: repeat(1,1fr);
@@ -679,7 +932,8 @@ legend{
     }
 
     .textareaComentario{
-        @include sizes(350px, 200px);
+        width: 350px;
+        height: 200px;
     }
 
     .contenedorCheckbox{
@@ -688,3 +942,4 @@ legend{
     }
 
 }
+
