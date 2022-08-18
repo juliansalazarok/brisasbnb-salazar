@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/*Paleta
-Rojo #FE6D73 Blanco #F1FAEE Celeste #A8DADC Azul #457B9D Azul oscuro #1D3557
-*/
 /*Estilos generales*/
 * {
   margin: 0;
@@ -140,6 +137,10 @@ footer {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+}
+
+:root {
+  --bs-link-hover-color: #676869;
 }
 
 /*Estilos específicos*/
@@ -588,6 +589,38 @@ legend {
   color: #1D3557;
 }
 
+.navheaderbackSoon {
+  width: 100%;
+  height: 600px;
+  background-image: url("../assets/backgrounds/seyfettin-dincturk-3hnVKdWveT4-unsplash.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenedorHeaderSoon {
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.736);
+  color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenedorHeaderSoon__titulo {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.contenedorHeaderSoon__subtitulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 130%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
 /*Media queries*/
 @media only screen and (min-width: 320px) and (max-width: 576px) {
   /*Estilos generales*/
@@ -754,6 +787,9 @@ legend {
   }
   .botonesContacto {
     flex-wrap: wrap;
+  }
+  .contenedorHeaderSoon {
+    font-size: 11px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 1200px) {
